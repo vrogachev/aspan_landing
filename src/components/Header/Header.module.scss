@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  padding: 20px 0;
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+
+  }
+  &__contacts {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    column-gap: 10px;
+    a, p {
+      color: #fff;
+    }
+    p {
+      color: #ADADAD;
+      font-size: 15px;
+    }
+    a {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}

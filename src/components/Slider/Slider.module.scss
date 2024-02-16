@@ -1,0 +1,41 @@
+.slider {
+  margin-bottom: 20px;
+  &__items {
+    gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+
+  &__scroller {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__item {
+    width: 357px;
+    height: 446px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+  }
+
+  &__image {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    transition-duration: .5s;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
